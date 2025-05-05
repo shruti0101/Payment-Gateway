@@ -2,12 +2,14 @@ import React from 'react';
 import { Container, ListGroup, Button } from 'react-bootstrap';
 import loadRazorpay from '../utils/razorpay';
 
-const CartPage = ({ cart, removeFromCart }) => {
+const CartPage = ({ cart, removeFromCart, setCart }) => {
   const total = cart.reduce((sum, item) => sum + item.discountedPrice, 0);
 
   const handlePayment = () => {
     if (total > 0) {
-      loadRazorpay(total);
+      loadRazorpay(total, () => {
+        setCart([]); // Clear the cart after successful payment
+      });
     } else {
       alert("Cart is empty");
     }

@@ -22,8 +22,7 @@ function App() {
       <Navbar cartCount={cart.length} />
       <Routes>
         <Route path="/" element={<Home addToCart={addToCart} />} />
-        <Route path="/cart" element={<CartPage cart={cart} removeFromCart={removeFromCart} />} />
-      </Routes>
+        <Route path="/cart" element={<CartPage cart={cart} removeFromCart={removeFromCart} setCart={setCart} />} />      </Routes>
     </Router>
   );
 }

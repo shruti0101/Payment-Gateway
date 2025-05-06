@@ -39,7 +39,7 @@ const courses = [
         "Real-world project experience",
         "Taught by professionals",
         "focuses on practical applications",
-        "Covers Python, SQL, Tableau"
+      
       ],
       hours: 300,
       originalPrice: 899,

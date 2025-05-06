@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 
 const Navbar = ({ cartCount }) => (
-  <BSNavbar bg="light" expand="lg">
+  <BSNavbar sticky="top" bg="light" expand="lg">
     <Container>
       <BSNavbar.Brand as={Link} to="/" >
       <img src="https://skillzrevo.com/wp-content/uploads/2024/10/SkillzRevomainlogo-Photoroom-1-296x86.png" alt="Logo" width="148" height="40" className="d-inline-block align-top" />{' '}

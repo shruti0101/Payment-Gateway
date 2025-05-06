@@ -8,18 +8,28 @@ const CartPage = ({ cart, removeFromCart, setCart }) => {
   const handlePayment = () => {
     if (total > 0) {
       loadRazorpay(total, () => {
-        setCart([]); // Clear the cart after successful payment
+        setCart([]); 
       });
     } else {
       alert("Cart is empty");
+      
     }
   };
+
+  function shopbutton() {
+    window.location.href = '/';
+  }
 
   return (
     <Container className="py-4">
       <h2>My Cart</h2>
       {cart.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <div>
+
+          <p>Your cart is empty.</p>
+          <button variant="primary " className='btn btn-primary' onClick={shopbutton}>Go to Courses</button>
+        </div>
+        
       ) : (
         <>
           <ListGroup className="mb-3">

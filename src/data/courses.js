@@ -23,7 +23,7 @@ const courses = [
       description: [
         "Learn GPT, DALL-E 2, Hugging Face",
         "Covers Python, ML, NLP, CV",
-        "Master GANs and RAG",
+      
         "Real-world projects"
       ],
       hours: 400,

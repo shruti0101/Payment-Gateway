@@ -3,7 +3,7 @@ const loadRazorpay = (totalAmount, onSuccess) => {
 
   const launchPayment = () => {
     const options = {
-      key: "rzp_test_3TtyaFDXb5RQnl", // Replace with your Razorpay key
+      key: "rzp_test_3TtyaFDXb5RQnl", 
       amount: totalAmount * 100,
       currency: "INR",
       name: "SkillRevo",
@@ -11,7 +11,7 @@ const loadRazorpay = (totalAmount, onSuccess) => {
       handler: function (response) {
         alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
         if (onSuccess) {
-          onSuccess(); // Clear the cart after payment
+          onSuccess(); 
         }
       },
       prefill: {

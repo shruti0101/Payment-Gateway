@@ -2,8 +2,8 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
 const CourseCard = ({ course, addToCart }) => (
-  <Card className="mb-4 shadow-sm">
-    <Card.Img variant="top" src={course.image} style={{ height: '180px', objectFit: 'cover' }} />
+  <Card className="mb-4 shadow-sm border-0">
+    <Card.Img variant="top" src={course.image} style={{ height: '185px', objectFit: 'center ' }} />
     <Card.Body>
       <Card.Title>{course.title}</Card.Title>
       <Card.Text>

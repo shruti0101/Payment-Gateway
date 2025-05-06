@@ -1,3 +1,7 @@
+
+import img1 from "../assets/img1.webp";
+import img2 from "../assets/img2.webp";
+import img3 from "../assets/img3.webp"; 
 const courses = [
     {
       id: 1,
@@ -11,7 +15,7 @@ const courses = [
       hours: 375,
       originalPrice: 1449,
       discountedPrice: 724.5,
-      image: "https://skillzrevo.com/wp-content/uploads/2024/08/HPC7.jpg"
+      image: img1
     },
     {
       id: 2,
@@ -25,7 +29,7 @@ const courses = [
       hours: 400,
       originalPrice: 1675,
       discountedPrice: 837.5,
-      image: "https://skillzrevo.com/wp-content/uploads/2024/08/HPC5.jpg"
+      image: img2
     },
     {
       id: 3,
@@ -40,8 +44,25 @@ const courses = [
       hours: 300,
       originalPrice: 899,
       discountedPrice: 449.5,
-      image: "https://skillzrevo.com/wp-content/uploads/2024/08/HPC7.jpg"
+      image: img3
     },
+
+    {
+      id: 3,
+      title: "Data Analytics Program",
+      description: [
+        "Combines data analytics with tools",
+        "Real-world project experience",
+        "Taught by professionals",
+        "focuses on practical applications",
+        "Covers Python, SQL, Tableau"
+      ],
+      hours: 300,
+      originalPrice: 899,
+      discountedPrice: 449.5,
+      image: img3
+    },
+
 
   ];
   

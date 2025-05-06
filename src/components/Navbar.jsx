@@ -2,12 +2,20 @@ import React from 'react';
 import { Navbar as BSNavbar, Nav, Container, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
+import logo from '../assets/logo.svg';
+
 
 const Navbar = ({ cartCount }) => (
   <BSNavbar sticky="top" bg="light" expand="lg">
     <Container>
       <BSNavbar.Brand as={Link} to="/" >
-      <img src="https://skillzrevo.com/wp-content/uploads/2024/10/SkillzRevomainlogo-Photoroom-1-296x86.png" alt="Logo" width="148" height="40" className="d-inline-block align-top" />{' '}
+      <img
+          src={logo}
+          alt="Logo"
+          width="148"
+          height="40"
+          className="d-inline-block align-top"
+        />
       
       </BSNavbar.Brand>
       <Nav className="ms-auto">
